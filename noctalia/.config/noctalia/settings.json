@@ -352,7 +352,7 @@
         "compactLockScreen": true,
         "dimmerOpacity": 0.9,
         "enableBlurBehind": true,
-        "enableLockScreenCountdown": true,
+        "enableLockScreenCountdown": false,
         "enableLockScreenMediaControls": false,
         "enableShadows": true,
         "forceBlackScreenCorners": false,
@@ -387,7 +387,6 @@
         "lockScreenBlur": 0,
         "lockScreenCountdownDuration": 10000,
         "lockScreenMonitors": [
-            "eDP-1"
         ],
         "lockScreenTint": 0,
         "passwordChars": true,
