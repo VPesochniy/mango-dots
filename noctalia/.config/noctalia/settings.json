@@ -192,8 +192,8 @@
     "brightness": {
         "backlightDeviceMappings": [
         ],
-        "brightnessStep": 5,
-        "enableDdcSupport": false,
+        "brightnessStep": 2,
+        "enableDdcSupport": true,
         "enforceMinimum": true
     },
     "calendar": {
@@ -614,14 +614,6 @@
     },
     "templates": {
         "activeTemplates": [
-            {
-                "enabled": true,
-                "id": "mango"
-            },
-            {
-                "enabled": true,
-                "id": "foot"
-            }
         ],
         "enableUserTheming": false
     },
