@@ -37,7 +37,7 @@
         "volumeFeedback": false,
         "volumeFeedbackSoundFile": "",
         "volumeOverdrive": false,
-        "volumeStep": 5
+        "volumeStep": 2
     },
     "bar": {
         "autoHideDelay": 500,
@@ -448,7 +448,7 @@
     },
     "network": {
         "bluetoothAutoConnect": false,
-        "bluetoothDetailsViewMode": "list",
+        "bluetoothDetailsViewMode": "grid",
         "bluetoothHideUnnamedDevices": true,
         "bluetoothRssiPollIntervalMs": 10000,
         "bluetoothRssiPollingEnabled": false,
