@@ -418,7 +418,7 @@
     },
     "idle": {
         "customCommands": "[]",
-        "enabled": true,
+        "enabled": false,
         "fadeDuration": 10,
         "lockCommand": "",
         "lockTimeout": 0,
@@ -479,7 +479,7 @@
         "enableMarkdown": false,
         "enableMediaToast": false,
         "enabled": true,
-        "location": "top",
+        "location": "top_right",
         "lowUrgencyDuration": 3,
         "monitors": [
         ],
