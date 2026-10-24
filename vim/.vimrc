@@ -5,9 +5,6 @@ syntax on
 set number
 set relativenumber
 
-" Использование системного буфера обмена
-set clipboard=unnamedplus
-
 " Настройки поиска
 set ignorecase
 set smartcase
@@ -83,16 +80,6 @@ nnoremap G Gzz
 " Отключение подсветки предыдущего поиска
 nnoremap <Esc> :nohlsearch<CR>
 nnoremap <C-c> :nohlsearch<CR>
-
-" Отключение копирования удаленного/изменяемого текста в буфер обмена (черный регистр)
-nnoremap d "_d
-vnoremap d "_d
-nnoremap D "_D
-vnoremap D "_D
-nnoremap c "_c
-vnoremap c "_c
-nnoremap C "_C
-vnoremap C "_C
 
 " Перемещение фокуса между окнами
 nnoremap <C-h> <C-w>h
