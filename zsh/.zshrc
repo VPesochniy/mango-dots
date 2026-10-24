@@ -84,4 +84,5 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 # Промпт
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"    # в .zshrc, рядом со starship
 
