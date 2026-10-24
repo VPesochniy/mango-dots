@@ -29,6 +29,50 @@ if (( $+commands[eza] )); then
   alias lf="$_eza -lf"
 fi
 
+# Git
+if (( $+commands[git] )); then
+  alias g='git'
+
+  # состояние и различия
+  alias gst='git status -sb'
+  alias gd='git diff'
+  alias gds='git diff --staged'
+  alias glo='git log --oneline --graph -20'
+  alias gloa='git log --oneline --graph --all'
+
+  # индекс и коммиты
+  alias ga='git add'
+  alias gaa='git add -A'
+  alias gap='git add -p'
+  alias gc='git commit -v'
+  alias gcm='git commit -m'
+  alias gca='git commit --amend --no-edit'
+
+  # ветки
+  alias gb='git branch -vv'
+  alias gsw='git switch'
+  alias gswc='git switch -c'
+  alias grs='git restore'
+  alias grss='git restore --staged'
+
+  # обмен с remote
+  alias gf='git fetch --all --prune'
+  alias gl='git pull'
+  alias gp='git push'
+  alias gpu='git push -u origin HEAD'
+  alias gpf='git push --force-with-lease'
+
+  # stash, rebase, прочее
+  alias gsta='git stash push'
+  alias gstp='git stash pop'
+  alias gstl='git stash list'
+  alias grb='git rebase'
+  alias grbi='git rebase -i'
+  alias gcp='git cherry-pick'
+  alias gcl='git clone'
+  alias groot='cd "$(git rev-parse --show-toplevel)"'
+fi
+
 # Автодополнение
 autoload -Uz compinit && compinit
 zstyle ':completion:*' menu select
