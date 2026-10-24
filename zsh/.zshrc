@@ -13,6 +13,10 @@ setopt INTERACTIVE_COMMENTS
 [[ -t 0 ]] && stty -ixon
 unsetopt FLOW_CONTROL
 
+alias grep='grep --color=auto'
+alias diff='diff --color=auto'   # красные/зелёные строки удалений и добавлений
+alias ip='ip -color=auto'        # ip a / ip r: интерфейсы, адреса и состояния UP/DOWN раскрашены
+
 # eza вместо ls
 if (( $+commands[eza] )); then
   _eza='eza --group-directories-first --icons=auto --time-style=long-iso'
@@ -27,6 +31,13 @@ if (( $+commands[eza] )); then
   alias lm="$_eza -l -s modified"
   alias ld="$_eza -lD"
   alias lf="$_eza -lf"
+fi
+
+# bat вместо cat
+if (( $+commands[bat] )); then
+  alias cat='bat -pp'
+#  export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+#  export MANROFFOPT='-c'
 fi
 
 # Git
